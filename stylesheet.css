@@ -1,0 +1,126 @@
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+
+
+  background-color: black;
+  color: white;
+  border-style: solid;
+  border-image-slice: 1;
+  border-width: 0px 3px 3px 3px;
+  border-image-source: linear-gradient(to left, #ee0979, #ff6a00);
+  margin:0px;
+}
+
+
+@font-face {
+font-family: 'Product Sans';
+font-style: normal;
+font-weight: 400;
+src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+}
+
+#navbar{
+  background-color: black;
+  width: 100%;
+  height: 5em;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  border-style: solid;
+  border-image-slice: 1;
+  border-width: 0px 0px 3px 0px;
+  border-image-source: linear-gradient(to left, #ee0979, #ff6a00);
+}
+a{
+  color: white;
+  font-size: 2em;
+  margin: 2em;
+  text-decoration: none;
+  font-family: "Product Sans";
+}
+#welcome-section{
+  width: 100%;
+  height: 100vh;
+
+  background-image : url("backpaper1.jpg");
+  background-position: center;
+  background-size: cover;
+}
+#main-text{
+  position: relative;
+  top: 50vh;
+  left: 5vh;
+  font-size: 5vw;
+  color: black;
+  display: inline-block;
+  font-family: monospace;
+  background-color: white;
+}h2{
+  font-family: Inter;
+  font-size: 3vw;
+}
+@media (max-width: 600px){
+
+}
+p{
+  font-family: "PT Sans";
+  font-size: 1.5em;
+
+}
+
+#about{
+margin: 5vw;
+width: 87vw;
+text-align: center;
+}
+
+#project-container{
+margin: 5vw;
+
+}
+#projects{
+  display: grid;
+
+padding: 10vw;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 10vw;
+}
+.project-tile{
+  background-color: red;
+  border-style: solid;
+  border-image-slice: 1;
+
+  border-width: 5px;
+  border-image-source: linear-gradient(to left, #ee0979, #ff6a00);
+}
+img{
+transform: translateX(-65px);
+  width: 100%;
+  height:100%;
+}
+#contact{
+margin: 5vw;
+}
+
+.social-button{
+  width: 6vw;
+  height: 6vw;
+  display: inline-block;
+margin: 2vw;
+
+}
+.cool{
+  font-size: 2vw;
+  font-family: "Product Sans";
+}
+#twitter, #email, #github{
+  border-radius: 100px;
+}
